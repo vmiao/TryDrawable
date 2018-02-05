@@ -26,4 +26,5 @@ dependencies {
     releaseCompile project(path: ':library', configuration: 'release')
     debugCompile project(path: ':library', configuration: 'debug')
     compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.plattysoft.leonids:LeonidsLib:1.3.2'
 }

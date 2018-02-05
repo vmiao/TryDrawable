@@ -8,6 +8,7 @@ import android.graphics.RectF;
 import android.os.Build;
 import android.os.Parcelable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
@@ -107,6 +108,7 @@ public class DrawableView extends View
   }
 
   @Override protected void onDraw(Canvas canvas) {
+    Log.i("DrawableView", "in onDraw event");
     super.onDraw(canvas);
     canvasDrawer.onDraw(canvas);
     pathDrawer.onDraw(canvas, currentDrawingPath, paths);
